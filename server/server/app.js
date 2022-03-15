@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 
 const app = express();
-const PORT = 3005;
+const PORT = process.env.PORT || 3005;
 
 mongoose.connect(`mongodb+srv://lana:lana@books.rxov8.mongodb.net/graphql-tutorial`,
     {useNewUrlParser: true, useUnifiedTopology: true});
